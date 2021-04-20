@@ -137,7 +137,7 @@ func EthToPlaton(eth []byte) (string, error) {
 		return "", fmt.Errorf("encoding bech32 failed: %w", err)
 	}
 
-	return bech32.Encode("atp", converted)
+	return bech32.Encode("lat", converted)
 }
 
 // UnmarshalText parses a hash in hex syntax.
